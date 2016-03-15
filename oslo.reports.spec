@@ -4,7 +4,7 @@
 #
 Name     : oslo.reports
 Version  : 1.6.0
-Release  : 11
+Release  : 12
 URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.6.0.tar.gz
 Summary  : oslo.reports library
