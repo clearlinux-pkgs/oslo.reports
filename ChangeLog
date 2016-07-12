@@ -1,11 +1,29 @@
 CHANGES
 =======
 
-1.7.0
------
+1.11.0
+------
+
+* Use file modification events instead of signal handler
+* Imported Translations from Zanata
+
+1.10.0
+------
 
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+
+1.9.0
+-----
+
+* Trivial: ignore openstack/common in flake8 exclude list
+
+1.8.0
+-----
+
+* Remove direct dependency on babel
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
 
 1.6.0
 -----
@@ -36,7 +54,7 @@ CHANGES
 1.2.0
 -----
 
-* Print the traceback if there was an exception in run(
+* Print the traceback if there was an exception in run()
 * Rename signal handler argument to 'frame'
 * Updated from global requirements
 * Updated from global requirements
