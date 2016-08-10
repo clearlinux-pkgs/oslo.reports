@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.13.0
+------
+
+* Updated from global requirements
+* Add Python 3.5 classifier and venv
+
 1.12.0
 ------
 
