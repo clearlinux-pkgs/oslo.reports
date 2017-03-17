@@ -1,6 +1,36 @@
 CHANGES
 =======
 
+1.18.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Update reno for stable/ocata
+* Remove references to Python 3.4
+
+1.17.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Add Constraints support
+* Bump hacking dep
+* Show team and repo badges on README
+
+1.16.0
+------
+
+* Fix a typo
+* Updated from global requirements
+* Add reno for release notes management
+* Updated from global requirements
+* Updated from global requirements
+* Changed the home-page link
+
 1.15.0
 ------
 
