@@ -1,6 +1,90 @@
 CHANGES
 =======
 
+1.28.0
+------
+
+* set default python to python3
+* fix lower constraints and uncap eventlet
+* Document workaround for AccessDenied error
+* add lower-constraints job
+* Updated from global requirements
+* Update links in README
+
+1.27.0
+------
+
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Update reno for stable/queens
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+1.26.0
+------
+
+* Updated from global requirements
+* Add bandit to pep8 job
+
+1.25.0
+------
+
+* Remove -U from pip install
+* Avoid tox\_install.sh for constraints support
+* Updated from global requirements
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Updated from global requirements
+
+1.24.0
+------
+
+* Imported Translations from Zanata
+* Remove psutil 1.x compat wrapping
+* Updated from global requirements
+
+1.23.0
+------
+
+* Updated from global requirements
+* Update the documentation link
+* Remove SIGUSR1 handler, which was deprecated after Ocata
+* Updated from global requirements
+* Update reno for stable/pike
+* Updated from global requirements
+
+1.22.0
+------
+
+* Updated from global requirements
+* update the doc URL according to document migration
+
+1.21.1
+------
+
+* switch from oslosphinx to openstackdocstheme
+* rearrange content to fit the new standard layout
+
+1.21.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Remove pbr warnerrors in favor of sphinx check
+* Updated from global requirements
+
+1.20.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
 1.19.0
 ------
 
@@ -157,7 +241,7 @@ CHANGES
 * add auto-generated docs for config options
 * Add shields.io version/downloads links/badges into README.rst
 * Updated from global requirements
-* guru_meditation_report: Use SIGUSR2 instead of SIGUSR1
+* guru\_meditation\_report: Use SIGUSR2 instead of SIGUSR1
 
 0.5.0
 -----
@@ -192,45 +276,45 @@ CHANGES
 -----
 
 * Updated from global requirements
-* Guru Meditation Reports broken without version_string
+* Guru Meditation Reports broken without version\_string
 * Fix intermittent test failures because of sort order
-* Graduation Prep: Use six.text_type instead of str
+* Graduation Prep: Use six.text\_type instead of str
 * Graduation Prep: Initial Import Fixup
 * exported from oslo-incubator by graduate.sh
 * Remove timeutils.strtime() usage
-* Switch from oslo.config to oslo_config
-* Use oslo_utils instead of deprecated oslo.utils
+* Switch from oslo.config to oslo\_config
+* Use oslo\_utils instead of deprecated oslo.utils
 * Report: Add basic processes section
-* Change oslo.config to oslo_config
-* switch to oslo_serialization
+* Change oslo.config to oslo\_config
+* switch to oslo\_serialization
 * Reports: Use sig handler traceback for curr thread
-* Report: Propagate view_type through collections
+* Report: Propagate view\_type through collections
 * Report: Support Sequences and Mappings as Data
-* Use same mask pattern for reports as mask_password
+* Use same mask pattern for reports as mask\_password
 * Mask secrets when output conf
 * Delete graduated serialization files
 * Remove our custom test base class
 * Switch oslo-incubator to use oslo.utils and remove old modules
-* Fix tests.unit.reports.* with python3.4
-* Fix tests.unit.reports.test_base_report with python3.4
+* Fix tests.unit.reports.\* with python3.4
+* Fix tests.unit.reports.test\_base\_report with python3.4
 * Set pbr 'warnerrors' option for doc build
 * fixed typos found by RETF rules
 * Report: Fix JinjaView deepcopy
 * Fixed several typos
-* Fix tests.unit.reports.test_guru_meditation_report under Python3
+* Fix tests.unit.reports.test\_guru\_meditation\_report under Python3
 * Use from/import style in module report
-* Fix tests.unit.reports.test_views failures under Python3
+* Fix tests.unit.reports.test\_views failures under Python3
 * Add option for GM report to dump to a file
 * Removed unneeded #noqa tag
 * Fixes Guru Meditation portability issue
 * Fix typo in inline documentation for report module
 * Use six.StringIO/BytesIO instead of StringIO.StringIO
 * Rename Openstack to OpenStack
-* Avoid failure of test_basic_report on 32 bit OS
+* Avoid failure of test\_basic\_report on 32 bit OS
 * Fix filter() usage due to python 3 compability
 * Unify different names between Python2/3 with six.moves
 * Remove vim header
-* Use six.string_type instead of basestring
+* Use six.string\_type instead of basestring
 * Fix typos in oslo
 * Adjust import order according to PEP8 imports rule
 * Replace assertEquals with assertEqual
