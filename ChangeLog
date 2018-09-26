@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+1.29.1
+------
+
+* Imported Translations from Zanata
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* import zuul job settings from project-config
+* Update unit test to reflect latest oslo.config
+* Update reno for stable/rocky
+* Switch to stestr
+* Add release notes link to README
+* fix tox python3 overrides
+* Remove the remaining of the removed option
+* Replace deprecated "auth\_uri" by "www\_authenticate\_uri"
+* Remove stale pip-missing-reqs and pypy tox tests
+* Trivial: Update pypi url to new url
+
 1.28.0
 ------
 
