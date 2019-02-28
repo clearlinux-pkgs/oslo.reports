@@ -5,17 +5,17 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : oslo.reports
-Version  : 1.29.1
-Release  : 34
-URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.1.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.1.tar.gz
-Source99 : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.1.tar.gz.asc
+Version  : 1.29.2
+Release  : 35
+URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.2.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.2.tar.gz
+Source99 : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.29.2.tar.gz.asc
 Summary  : oslo.reports library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: oslo.reports-python3
-Requires: oslo.reports-license
-Requires: oslo.reports-python
+Requires: oslo.reports-license = %{version}-%{release}
+Requires: oslo.reports-python = %{version}-%{release}
+Requires: oslo.reports-python3 = %{version}-%{release}
 Requires: Jinja2
 Requires: oslo.i18n
 Requires: oslo.serialization
@@ -27,8 +27,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/oslo.reports.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the oslo.reports package.
@@ -57,20 +60,21 @@ python3 components for the oslo.reports package.
 
 
 %prep
-%setup -q -n oslo.reports-1.29.1
+%setup -q -n oslo.reports-1.29.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537929001
+export SOURCE_DATE_EPOCH=1551396075
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/oslo.reports
-cp LICENSE %{buildroot}/usr/share/doc/oslo.reports/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/oslo.reports
+cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.reports/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -81,7 +85,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/oslo.reports/LICENSE
+/usr/share/package-licenses/oslo.reports/LICENSE
 
 %files python
 %defattr(-,root,root,-)

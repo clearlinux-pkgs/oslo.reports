@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.29.2
+------
+
+* add python 3.7 unit test job
+* Update hacking version
+* Use template for lower-constraints
+* Update mailinglist from dev to discuss
+* Clean up .gitignore references to personal tools
+
 1.29.1
 ------
 
