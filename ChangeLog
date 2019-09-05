@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+1.30.0
+------
+
+* Add Python 3 Train unit tests
+* Move doc related modules to doc/requirements.txt
+* Sync Sphinx requirement
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Update master for stable/stein
+
 1.29.2
 ------
 
