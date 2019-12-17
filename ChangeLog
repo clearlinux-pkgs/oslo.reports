@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+1.31.1
+------
+
+* Switch from 'collections' -> 'collections.abc'
+* Exclude tests from apidoc
+* tox: Keeping going with docs
+* Switch to Ussuri jobs
+* Update the constraints url
+
+1.31.0
+------
+
+* Update master for stable/train
+
 1.30.0
 ------
 
