@@ -6,7 +6,7 @@
 #
 Name     : oslo.reports
 Version  : 1.31.1
-Release  : 40
+Release  : 41
 URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.31.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.31.1.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.reports/oslo.reports-1.31.1.tar.gz.asc
