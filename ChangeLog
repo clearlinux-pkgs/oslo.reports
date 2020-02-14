@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* remove outdated header
+* [ussuri][goal] Drop python 2.7 support and testing
+* tox: Trivial cleanup
+* trivial: Remove cruft from sphinx config file
+* tox: Add missing deps for 'releasenotes' job
+
 1.31.1
 ------
 
