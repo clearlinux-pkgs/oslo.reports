@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC12B8E73B30F2FC8 (infra-root@openstack.org)
 #
 Name     : oslo.reports
-Version  : 2.1.0
-Release  : 45
-URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.1.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.1.0.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.1.0.tar.gz.asc
+Version  : 2.2.0
+Release  : 46
+URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz.asc
 Summary  : oslo.reports library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -71,15 +71,15 @@ python3 components for the oslo.reports package.
 
 
 %prep
-%setup -q -n oslo.reports-2.1.0
-cd %{_builddir}/oslo.reports-2.1.0
+%setup -q -n oslo.reports-2.2.0
+cd %{_builddir}/oslo.reports-2.2.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1591379323
+export SOURCE_DATE_EPOCH=1600109639
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -92,7 +92,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.reports
-cp %{_builddir}/oslo.reports-2.1.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.reports/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/oslo.reports-2.2.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.reports/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

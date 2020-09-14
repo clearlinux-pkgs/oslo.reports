@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* [goal] Migrate testing to ubuntu focal
+* Bump bandit version
+* Fix pygments style
+
 2.1.0
 -----
 
@@ -8,6 +15,7 @@ CHANGES
 * Switch to newer openstackdocstheme and reno versions
 * Remove the unused coding style modules
 * Remove translation sections from setup.cfg
+* Align contributing doc with oslo's policy
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
 * Add release notes links to doc index
