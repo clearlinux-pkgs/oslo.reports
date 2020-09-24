@@ -6,7 +6,7 @@
 #
 Name     : oslo.reports
 Version  : 2.2.0
-Release  : 46
+Release  : 47
 URL      : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.reports/oslo.reports-2.2.0.tar.gz.asc
